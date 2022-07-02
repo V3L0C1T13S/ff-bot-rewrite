@@ -1,3 +1,6 @@
+import os
+
+
 class SettingsManager():
     def __init__(self):
         self.settings = {
@@ -5,4 +8,6 @@ class SettingsManager():
                 "arrow_count": 0,
             },
         }
-        self.settings_file = "settings.json"
+        # Create data dir if it doesn't exist
+        if not os.path.exists("./data"):
+            os.makedirs("./data")
