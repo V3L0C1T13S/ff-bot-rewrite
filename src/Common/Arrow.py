@@ -1,5 +1,4 @@
 from util.keyboardUtils import pressKey
-import time
 
 class Arrow():
     def __init__(self, color, position, key, color_tolerance = (10, 10, 10)):

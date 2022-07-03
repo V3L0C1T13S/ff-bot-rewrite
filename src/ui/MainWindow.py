@@ -11,6 +11,7 @@ from PyQt6.QtCore import (
     pyqtSlot,
 )
 import os
+import threading
 from Common.Arrow import Arrow
 from ui.tabs.ManagementPage import ManagementPage
 from ui.tabs.Settings import Settings
