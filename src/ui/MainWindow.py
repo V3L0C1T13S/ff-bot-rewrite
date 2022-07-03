@@ -43,7 +43,6 @@ class FrameCaptureWorker(QRunnable):
         print("[INFO] Starting frame capture thread")
         while self.running:
             Screen = ImageGrab.grab(bbox = (x1, y1, x2, y2))
-            # Screen.save("/home/john/1.jpeg", "jpeg")
 
             for arrow in self.arrows:
                 arrow.do_compare(Screen)
